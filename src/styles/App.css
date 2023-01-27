@@ -1,6 +1,6 @@
-body {
+/* body {
     margin: 0;
-}
+} */
 
 @import url(https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
@@ -8,13 +8,14 @@ body {
     font-family: "Rubik", sans-serif;
 }
 
-
-/* ---Sidebar css */
-
 .text-primary {
     color: green!important;
     font-weight: 700;
     font-size: larger;
+}
+
+.navnew {
+    margin-bottom: 15px;
 }
 
 .btn-primary {
@@ -54,19 +55,17 @@ body {
     height: 16vh;
     width: 7vw;
     border-radius: 60px;
-    /* margin-right: 15vw; */
 }
 
 .sidebar {
     width: 280px;
     min-height: 100vh;
-    box-shadow: 0px 4px 8px rgb(0 0 0 / 16%);
     background-color: #31cf3a;
     position: fixed;
     top: 0;
     left: -100%;
     z-index: 1;
-    transition: 0.5s;
+    transition: 1ms;
 }
 
 .sidebar.active {
@@ -76,7 +75,6 @@ body {
 .sd-header {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     justify-content: center;
     padding: 15px;
 }
@@ -122,7 +120,6 @@ body {
     padding: 10px 16px;
     color: white;
     background-color: #31cf3a;
-    /* border-color: white; */
     border: 2px solid white;
     border-radius: 20px;
     cursor: pointer;

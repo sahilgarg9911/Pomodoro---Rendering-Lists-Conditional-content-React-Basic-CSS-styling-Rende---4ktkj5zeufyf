@@ -3,8 +3,6 @@ import '../styles/Mainpage.css';
 
 
 const Mainpage = () => {
-
-    // const [year, setYear ] = useState();
     const [list, setlist] = useState([]);
     const [showSave, setShowSave] = useState(false);
 
@@ -18,7 +16,6 @@ const Mainpage = () => {
             return [...prev, data];
             
         })
-        // setData("");
         setData({
             "year" : "",
             "amount": ""       
@@ -26,32 +23,14 @@ const Mainpage = () => {
     }
 
     const handleremove = (id) => {
-        console.log(id);
-        // setlist(slice(id));
-        // setlist(oldArray=>oldArray.splice(id, 1));
-        setlist(current =>
-
-            current.filter((employee, i) => {
-            
-            // 👇️ remove object that has id equal to 2
-            
-            return i !== id;
-            
-            }),
-            
-            );
-
-
-
+        setlist(current => current.filter((employee, i) => {return i !== id; }),);
     }
 
     const onEdit = (id) => {
-        // console.log(id)
         setShowSave(true)
         const li =  list.filter((list, i) => {            
             return i == id; 
             })
-            // console.log(li);
             setData({
                 "year": li[0].year,
                 "amount": li[0].amount
@@ -63,8 +42,6 @@ const Mainpage = () => {
         setShowSave(false);
     }
     
-   
-    // console.log(list);
     return(
         <div className="mainpagediv">
             <div className="bar"><div className="progress"></div></div>
@@ -105,7 +82,8 @@ const Mainpage = () => {
             <div className="inputsdiv">
                 <div className="yeardiv">
                 <label for="cars">Choose Year</label>
-                <select name='year' id="cars" value={data.year} onChange={(e)=> {setData({...data, [e.target.name] : e.target.value})}} >
+                <select required name='year' id="cars" value={data.year} onChange={(e)=> {setData({...data, [e.target.name] : e.target.value})}} >
+                <option value="" disabled >Year</option>
                 <option value="2021">2021</option>
                 <option value="2022">2022</option>
                 <option value="2023">2023</option>
@@ -120,9 +98,8 @@ const Mainpage = () => {
             </div>
             <div className="add">
                 {
-                    showSave ? (<button onClick={handleSave}  >Save</button>) : (<button onClick={handleadd}  >Add</button>)
+                    showSave ? (<button id="raaa" onClick={handleSave}  >Save</button>) : (<button onClick={handleadd}  >Add</button>)
                 }
-                {/* <button onClick={handleadd}  >Add</button> */}
             </div>
 
         </div>
