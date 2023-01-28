@@ -1,0 +1,26 @@
+.container-fluid {
+    background-color: white;
+}
+
+nav {
+    margin-bottom: 10px;
+}
+
+.bar {
+    width: 50%;
+    background-color: rgb(229, 249, 250);
+    border-radius: 25px;
+}
+
+.progress {
+    width: 30%;
+    background-color: rgb(55, 212, 121);
+    border-radius: 25px;
+}
+
+.barandheading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

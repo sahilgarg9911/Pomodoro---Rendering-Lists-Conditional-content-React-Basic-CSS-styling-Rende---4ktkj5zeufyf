@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-around;
     /* border: 1px solid black; */
-    width: 60%;
+    width: 90%;
     height: 15vh;
     border-radius: 15px;
     background-color: rgb(229, 249, 250);
@@ -88,7 +88,6 @@
     border-radius: 10px;
     width: 60px;
     background-color: rgb(55, 212, 121);
-    border-color: rgb(55, 212, 121);
 }
 
 .removebtn {
@@ -110,3 +109,5 @@
 .mainpagediv {
     margin-left: 350px;
 }
+
+.inputsdiv {}

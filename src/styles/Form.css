@@ -1,0 +1,9 @@
+.inputsdiv {
+    /* display: flex; */
+    /* margin-left: 275px; */
+}
+
+.addbtn {
+    border-color: rgb(55, 212, 121);
+    color: white;
+}

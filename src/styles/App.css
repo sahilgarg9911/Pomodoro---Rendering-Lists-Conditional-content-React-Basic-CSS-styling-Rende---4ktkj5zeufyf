@@ -1,127 +1,13 @@
-/* body {
-    margin: 0;
+/* div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 } */
 
-@import url(https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css);
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
-body {
-    font-family: "Rubik", sans-serif;
+* {
+    padding: 2px;
 }
 
-.text-primary {
-    color: green!important;
-    font-weight: 700;
-    font-size: larger;
-}
-
-.navnew {
-    margin-bottom: 15px;
-}
-
-.btn-primary {
-    border-color: white !important;
-    background-color: white !important;
-    color: #fff;
-}
-
-.shadow-md {
-    box-shadow: 0px 5px 10px rgba(90, 116, 148, 0.3);
-}
-
-.navbar {
-    border-radius: 5px;
-}
-
-.sidebaricon {
-    height: 3vh;
-    width: 2vw;
-}
-
-.closebtn {
-    color: black;
-    margin-right: -25vh;
-}
-
-.closebtndiv {
-    margin-top: 10vh;
-    margin-left: 10vw;
-}
-
-.headertext {
-    color: green;
-}
-
-.profilleimage {
-    height: 16vh;
-    width: 7vw;
-    border-radius: 60px;
-}
-
-.sidebar {
-    width: 280px;
-    min-height: 100vh;
-    background-color: #31cf3a;
-    position: fixed;
-    top: 0;
-    left: -100%;
-    z-index: 1;
-    transition: 1ms;
-}
-
-.sidebar.active {
-    left: 0;
-}
-
-.sd-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-}
-
-.sidebar-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    transition: 0.5s;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.sidebar-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-.sd-body {
-    padding: 15px;
-    max-height: calc(100vh - 67px);
-    overflow-x: hidden;
-}
-
-.sd-body ul {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 0;
-    padding: 0;
-}
-
-.sd-body ul li {
-    list-style: none;
-    margin-bottom: 8px;
-}
-
-.sd-body ul li .sd-link {
-    display: inline-block;
-    width: 100%;
-    padding: 10px 16px;
-    color: white;
-    background-color: #31cf3a;
-    border: 2px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    text-decoration: none;
+.maindivapp {
+    margin-left: 320px;
 }
